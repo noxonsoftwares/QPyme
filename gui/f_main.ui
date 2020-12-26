@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QPyme</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../imagenes/icon_qpyme.png</normaloff>../imagenes/icon_qpyme.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../imagenes/icons8-create-document-50.png</normaloff>../imagenes/icons8-create-document-50.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../imagenes/icons8-request-money-50.png</normaloff>../imagenes/icons8-request-money-50.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../imagenes/icons8-initiate-money-transfer-50.png</normaloff>../imagenes/icons8-initiate-money-transfer-50.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../imagenes/icons8-inspection-50.png</normaloff>../imagenes/icons8-inspection-50.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>880</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInicio">
+    <property name="title">
+     <string>Inicio</string>
+    </property>
+    <widget class="QMenu" name="menuTurno">
+     <property name="title">
+      <string>Turno</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../imagenes/icons8-contact-details-50.png</normaloff>../imagenes/icons8-contact-details-50.png</iconset>
+     </property>
+     <addaction name="actionInicio_de_turno_2"/>
+     <addaction name="actionCierre_de_turno_2"/>
+    </widget>
+    <addaction name="menuTurno"/>
+    <addaction name="actionSalir_2"/>
+   </widget>
+   <widget class="QMenu" name="menuMovimientos">
+    <property name="title">
+     <string>Movimientos</string>
+    </property>
+    <addaction name="actionIngreso_dinero"/>
+    <addaction name="actionSalida_dinero"/>
+   </widget>
+   <widget class="QMenu" name="menuAdministracion">
+    <property name="title">
+     <string>Administracion</string>
+    </property>
+    <widget class="QMenu" name="menuBase_de_datos">
+     <property name="title">
+      <string>Base de datos</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../imagenes/icons8-work-50.png</normaloff>../imagenes/icons8-work-50.png</iconset>
+     </property>
+     <addaction name="actionCompactar"/>
+     <addaction name="actionExportar"/>
+     <addaction name="actionImportar"/>
+    </widget>
+    <widget class="QMenu" name="menuReportes">
+     <property name="title">
+      <string>Reportes</string>
+     </property>
+     <addaction name="actionVenta_del_dia"/>
+    </widget>
+    <addaction name="actionUsuarios_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionControl_Stock"/>
+    <addaction name="separator"/>
+    <addaction name="menuBase_de_datos"/>
+    <addaction name="separator"/>
+    <addaction name="menuReportes"/>
+   </widget>
+   <addaction name="menuInicio"/>
+   <addaction name="menuMovimientos"/>
+   <addaction name="menuAdministracion"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionIngreso_dinero">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/icons8-request-money-50.png</normaloff>../imagenes/icons8-request-money-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ingreso dinero</string>
+   </property>
+  </action>
+  <action name="actionSalida_dinero">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/icons8-initiate-money-transfer-50.png</normaloff>../imagenes/icons8-initiate-money-transfer-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salida dinero</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/cancel.png</normaloff>../imagenes/cancel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionUsuarios_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/icons8-badge-50.png</normaloff>../imagenes/icons8-badge-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Usuarios</string>
+   </property>
+  </action>
+  <action name="actionControl_Stock">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/icons8-questionnaire-50.png</normaloff>../imagenes/icons8-questionnaire-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Control Stock</string>
+   </property>
+  </action>
+  <action name="actionCompactar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/icons8-console-50.png</normaloff>../imagenes/icons8-console-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Compactar</string>
+   </property>
+  </action>
+  <action name="actionExportar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/icons8-console-50.png</normaloff>../imagenes/icons8-console-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exportar</string>
+   </property>
+  </action>
+  <action name="actionImportar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/icons8-console-50.png</normaloff>../imagenes/icons8-console-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Importar</string>
+   </property>
+  </action>
+  <action name="actionVenta_del_dia">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/icons8-inspection-50.png</normaloff>../imagenes/icons8-inspection-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Venta del dia</string>
+   </property>
+  </action>
+  <action name="actionInicio_de_turno">
+   <property name="text">
+    <string>Inicio de turno</string>
+   </property>
+  </action>
+  <action name="actionCierre_de_turno">
+   <property name="text">
+    <string>Cierre de turno</string>
+   </property>
+  </action>
+  <action name="actionInicio_de_turno_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/ok.png</normaloff>../imagenes/ok.png</iconset>
+   </property>
+   <property name="text">
+    <string>Inicio de turno</string>
+   </property>
+  </action>
+  <action name="actionCierre_de_turno_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/cancel.png</normaloff>../imagenes/cancel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cierre de turno</string>
+   </property>
+  </action>
+  <action name="actionSalir_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../imagenes/cancel.png</normaloff>../imagenes/cancel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Retiro dinero</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../imagenes/icon_qpyme.png</normaloff>../imagenes/icon_qpyme.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Motivo</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>Limpieza</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Insumo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Comida</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pago 3ros.</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cuota</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Adelanto</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Monto</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Detalle</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="3">
+    <widget class="QPlainTextEdit" name="plainTextEdit"/>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>Cancelar</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Aceptar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
